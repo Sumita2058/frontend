@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}
+.time{
+    height: 50%;
+    width: 50%;
+    background-color: pink;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 300px;
+    padding: 20px 80px;
+    text-align: center;
+    }
+    .timer{
+      font-size: 30px;
+        color: white;
+    }
+    .button{
+        border: 1px solid none;
+        border-radius: 5px;
+        padding: 20px 50px;
+    }
+    .button button{
+        font-size: 20px;
+        color: white;
+        background-color: brown;
+        border: 2px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        padding: 5px 10px;
+    }
+ 

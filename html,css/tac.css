@@ -1,0 +1,18 @@
+ table {
+    border-collapse: collapse; 
+    width: 5cm;
+    height: 10cm; 
+  }
+  
+  th, td {
+    border: 1px solid black; 
+    padding: 2px;  
+    }
+    td:nth-child(even)
+   {
+        background-color: brown;
+    }  
+  th:nth-child(odd){
+    background-color: black;
+  }  
+

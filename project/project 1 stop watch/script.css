@@ -1,0 +1,52 @@
+*
+*::after
+*::before
+    {
+        padding : 0;
+        margin : 0;
+        box-sizing : border-box;
+        font-family : "Playwrite Colombia Guides", sans-serif;
+    }
+    .container{
+        background-color: pink;
+        width: 40%;
+        max-width: 450px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        padding: 80px 0;
+        border-radius: 20px;
+   }
+ .timeDisplay{
+    color: blue;
+    /*background-color: white;*/
+    background: linear-gradient(145deg, #0000, purple);
+    width: 110%;
+    position: relative;
+    left: -5%;
+    padding: 40px 0;
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    font-family:"Playwrite Colombia Guides",serif;
+ }
+ .button{
+    width: 80%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+ }
+ .button button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-family:"Playwrite Colombia Guides",serif;
+
+    cursor: pointer;
+    outline: none;
+ }
