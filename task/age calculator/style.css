@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.container{
+    color: black;
+    font-size: 15px;
+    padding: 0 20px;
+    margin: 10px;
+}
+.container span{
+    font-size: 20px;
+}
+.inputbox{
+    display: flex;
+}

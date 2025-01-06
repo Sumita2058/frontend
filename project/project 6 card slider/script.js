@@ -1,6 +1,6 @@
 // access the images
 const sliderImage = document.querySelectorAll("img");
-// access the preview and previews buttons
+// access the next and previews buttons
 const nextButton = document.querySelector(".next");
 const preButton = document.querySelector(".pre");
 const container = document.querySelector(".nature");

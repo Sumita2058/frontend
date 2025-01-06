@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+    width: 100%;
+    min-width: 100vh;
+}
+.imagecontainer{
+   width: 300px ;
+   margin: 100px;
+   align-items: center;
+   position: relative;
+
+}
+.imagecontainer image{
+    height: 500px;
+     width: 0px;
+     padding-top: 2px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.imagecontainer .image img{
+    height: 560px;
+    width: 500px;
+    margin-left: 500px;
+    padding: 0px;
+    position: absolute;
+    object-fit: cover;
+}
+.image{
+    display: flex;
+    justify-self:center;
+    height: 600px;
+    width: 490px;
+    padding: 20px 20px;
+    padding-left: 20px;
+    left: 15px;
+}
+.image img{
+    padding: 5px 10px;
+}
+/*button*/
+.buttons{
+   color: white;
+   border-radius: 5px;
+   font-size: 30px;
+   font-weight: bold;
+   margin: 20px;
+   align-items: center;
+   display: flex;
+   width: 20px;
+   
+
+}
+button.pre, button.next{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-left: 400px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+}
+button.pre{
+    left: 50px;
+}
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+    
+}
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+    
+}
+/* animation */
+@keyframes pre1 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+    
+}
+@keyframes pre2 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+    
+}

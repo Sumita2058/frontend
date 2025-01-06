@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+}
+.font{
+    display: flex;
+    background-color: gray;
+}
+.font li{
+    margin:8px;
+}
+.font a{
+    color: white;
+    text-decoration: none;
+    font-size:18px ;
+    text-transform: capitalize;
+}
+.button{
+  margin: 6px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.font a:hover{
+    color: green;
+    font-size: none;
+    border-bottom: 2px solid black;
+    transition: ease 1s;
+}
+.icon{
+    display: none;
+}
+.icon div{
+    background-color: aliceblue;
+    height: 5px;
+    width: 25px;
+    margin: 3px 0;
+}
+@media screen and (max-width: 628px){
+    .logo{
+        margin: 10px 0;
+        height: 30px;
+        
+    }
+    .icon{
+        display: block;
+        margin: 10px 0;
+    }
+    .font{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        top: 120px;
+        padding: 20px 0px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    
+    }
+    .font.active{
+        display: flex;
+    }
+        .button{
+            width: 40%;
+            margin: auto;
+        }
+        .font li{
+            margin: 20px;
+        }
+
+}
