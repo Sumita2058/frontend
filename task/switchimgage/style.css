@@ -20,15 +20,14 @@ h1{
 button{
     height: 30px;
     width: 80px;
-   background-color: crimson;
+   background-color: skyblue;
     margin: 20px 20px;
     font-size: 20px;
     outline: none;
-    border: 2px solid blue;
+    border: none;
+
 }
 button:hover{
     cursor: pointer;
-    background-color: turquoise;
-    border: 1px solid white;
-    color: white;
+    transition: 10 ease;
 }

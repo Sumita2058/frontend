@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(74, 70, 70);
+    font-family: "Inconsolata", serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    padding: 18px;
+}
+nav img{
+    width: 7%;
+    height: 8%;
+    margin-left: 22px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 15px;
+    margin-inline: 30px;
+    font-size: 18px;
+
+}
+nav ul button{
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    background-color: #3CD83C ;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+.card {
+    height:70px;
+    width: 500px;
+    margin: 5px 10px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 32pc;
+    }
+.card .music img{
+    height: 30px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .music p{
+    width: 15%;
+    height: 10%;
+    left: 13pc;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card .music .duration{
+    width: 5%;
+    height: 10%;
+    left: 26pc;
+    bottom: 38px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.seek{
+    text-align: center;
+    padding: 17px;
+    margin-top: 11px;
+    background-color: rgb(50, 65, 50);
+}
+.seek input{
+    width: 420px;
+    cursor: pointer;
+}
+.seek img{
+    height: 50px;
+    width: 40px;
+}

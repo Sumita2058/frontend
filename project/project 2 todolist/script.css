@@ -28,5 +28,6 @@
     background-color: whitesmoke;
    }
    .button input{
-      height: 45px;
+      height: 20px;
+      justify-content: space-between;
    }

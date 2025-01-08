@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inconsolata:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <!--googlefont cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <img src="logo.png" alt="logo" />
+        <ul>
+            <li>Home</li>
+            <li>spotify song's</li>
+            <button>Sign in</button>
+        </ul>
+</nav>
+        <div class="container">
+            <div class="text">
+                <h2>Music for everyone</h2>
+            </div>
+            <div class="card">
+                <div class="music">
+                    <img src="nr.jpeg" alt="logo" />
+                    <p id="songName">november rain</p>
+                    <div class="duration">
+                        9:00
+                        <i id="0" class="fa-solid fa-play audio"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="music">
+                    <img src="s.jpeg" alt="logo" />
+                    <p id="songName">sadhana</p>
+                    <div class="duration">
+                        4:00
+                        <i id="1" class="fa-solid fa-play audio"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="music">
+                    <img src="p.webp" alt="logo" />
+                    <p id="songName">patience</p>
+                    <div class="duration">
+                        5:60
+                        <i id="2" class="fa-solid fa-play audio"></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+            </div>
+            <div class="card">
+                <div class="music">
+                    <img src="k.jpeg" alt="logo" />
+                    <p id="songName">kramasha</p>
+                    <div class="duration">
+                        6:00
+                        <i id="3" class="fa-solid fa-play audio"></i>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        </div>
+        <div class="seek">
+            <input id="range" type="range" value="0" min="0" max="100" />
+            <div class="bottom">
+                <img id="gif" src="logo.png" alt="">
+                <p id="name">jalius</p>
+                <i id="playBtn" class="fa-solid fa-play"></i>
+        
+            </div>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        
+        </html>
