@@ -1,26 +1,25 @@
-// *access the images
-const sliderImage = document.querySelectorAll("img");
-// access the next and previews buttons
-const nextButton = document.querySelector(".next");
+//access the image
+const sliderImage = document.getElementById("img");
+//access the next and previous button
+const nextbutton = document.querySelector(".next");
 const preButton = document.querySelector(".pre");
 const container = document.querySelector(".nature");
-// indicator
+//indicator 
 let nextdotContainer = document.querySelectorAll(".dot");
 counter = 0;
-let natures;                                              
-// slider next
-nextButton.addEventListener("click", sliderNext);
-function sliderNext() {
-  sliderImage[counter].style.animation = "next1 0.5s ease-in forwards";
- if (counter >= sliderImage.length - 1) {
-    counter = 0;
-  } else {
+let nature;
+//slider next
+nextbutton.addEventListener("click", sliderNext);
+function sliderNext(){
+    sliderImage[counter].style.animation ="next1 0.5s ease-in forwards";
+   if (counter >= sliderImage.length -1){
+    counter =0;
+   }else{
     counter++;
-  }
-  sliderImage[counter].style.animation = "next2 0.5s ease-in forwards";
-  updateindicator();
+   }
+   sliderImage[counter].style.animation ="next2 0.5s ease-in forwards";
+   updateindicator();
 }
-
 // sider pre
 preButton.addEventListener("click", sliderPre);
 function sliderPre() {
