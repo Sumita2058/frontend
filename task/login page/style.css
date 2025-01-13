@@ -12,20 +12,38 @@ body{
 .container{
     height: 100%;
     position: absolute;
-    top: 2%;
+    top: 10%;
     z-index: 1;
-    font-size: 30px;
+    font-size: 20px;
 }
 .container h1{
-    color: cyan;
-
+    color: #000000;
+    margin: 30px;
+    margin-left: 15px;
 }
 
 .box input{
-    
-    width: 110%;
+    width: 80pc;
     height: 40px;
     color: white;
     size: 10px;
-    
+    border: none;
+    border-radius: 20px;
+    margin: 30px 20px;
+    justify-content: space-between;
+}
+.box label{
+    align-items: center;
+    left: 20px;
+    margin: 30px 20px;
+    top: 400pc;
+}
+button{
+    width: 80pc;
+    height: 40px;
+    margin: 30px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: rgb(38, 38, 201);
 }
