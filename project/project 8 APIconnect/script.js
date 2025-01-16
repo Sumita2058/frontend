@@ -47,10 +47,7 @@ if (currentPage === "country") {
       <p><strong>Region<strong> ${Object.values(country.currencies).map(
         (c) => c.name
       )}</p>
-     <div class="map">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593982.0245516009!2d-36.9023897!3d-54.44101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbecb0d04d60d1019%3A0xde9df3c446380561!2sSouth%20Georgia%20Island!5e0!3m2!1sen!2snp!4v1736810011030!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <a href="{$https://goo.gl/maps/rqWyfUAt4xhvk1Zy9}">View </a>
+    <a href="${country.maps.googleMaps}" target="_blank">View Map</a>
       `;
       })
       .catch((error) => {

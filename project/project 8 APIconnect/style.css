@@ -61,13 +61,12 @@ header h1{
     
     
 }
+/* country back */
 .buttons{
     padding: 4px 10px;
     background-color: rgb(4, 241, 103);
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin-left: 30%;
 
 }
 footer{

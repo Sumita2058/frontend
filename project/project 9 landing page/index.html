@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+  <!--tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+  <!-- style.css -->
+  <link rel="stylesheet" href="assests/css/style.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body >
+  <!--navbar-->
+  <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md text ">
+    <a href="#" id="brand" class="font-display flex gap-2 items-center flex-1">
+      <img src="./assests/img/logoo.png" alt="logo" class="object-cover max-h-10 max-w-8" />
+      <span class="font-display">Music</span>
+    </a>
+    <div id="nav-menu" class="hidden gap-2 lg:flex 
+         .capitalize">
+      <a href="#" class="font-bold font-display hover:text-blue-500">pricing</a>
+      <a href="#" class="font-bold font-display hover:text-blue-500">docs</a>
+      <a href="#" class="font-bold font-display hover:text-blue-500">change</a>
+      <a href="#" class="font-bold font-display hover:text-blue-500">blogs</a>
+      <a href="#" class="font-bold font-display hover:text-blue-500">login</a>
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end">
+      <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+        <span class="font-display font-400">Developer</span> <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <div>
+      <button class="p-2 lg:hidden" onclick="handlemenu()">
+        <i class="fa-solid fa-bars text-gray-600 text-20px"></i>
+      </button>
+    </div>
+    <!-- for mobile view -->
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white p-3 inset-3">
+      <div class="flex justify-between">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="./assests/img/logoo.png" class="object-fit max-w-12 max-h-12" />
+          <span class="font-display font medium text-lg">Music</span></a>
+        <button class="p-2 md:hidden" onclick="handlemenu()"><i class="fa-solid fa-xmark text-gray-500"></i></button>
+      </div>
+      <div class="mt-10 ">
+        <a href="#"
+          class="font-medium font-display m-3 p-3 hover:border-gray-500 block rounded-lg  hover:bg-gray-100">pricing</a>
+        <a href="#"
+          class="font-medium font-display m-3 p-3 hover:border-gray-500 block rounded-lg  hover:bg-gray-100">docs</a>
+        <a href="#"
+          class="font-medium font-display m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">change</a>
+        <a href="#"
+          class="font-medium font-display m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">blogs</a>
+        <a href="#"
+          class="font-medium font-display m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">login</a>
+      </div>
+      <div class="h-[2px] bg-gray-300"></div>
+      <button class="mt-6 w-full flex gap-2 items-center px-4 py-6 rounded-lg hover:bg-gray-100">
+        <span class="font-display font-400">Developer</span> <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- footer -->
+  <footer class="mt-[100px] mx-auto  max-w-5xl">
+    <div class="bg-gray-300 px-8 py-12 rounded-lg flex md:flex-row-reverse items-center lg:border-none gap-8 border flex-col-reverse>
+      <a href="#" class="font-light font-display">documentation</a>
+      <div class="flex gap-8 text-lg">
+        <a href="#" class="flex gap-8 text-lg hover:text-gray-500"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <a href="#" class="flex gap-2 items-center flex-1">
+        <img src="./assests/img/logoo.png" class="object-cover max-w-12 max-h-12" />
+        <span class="font-display">Music Heals</span>
+      </a>
+    </div
+ <div class="flex flex-col items-center justify-center gap-6 my-12">
+      <div class="flex ju items-center">
+        <img src="./assests/img/t.png" class="w-14 h-14" alt="logo" />
+        <p>ART</p>
+      </div>
+      <p >&copy; <span class="text-sm text-gray-500 h-16 w-17" id="date"></span> Music.Inc All right reserved</p>
+    </div>
+
+  </footer>
+  <script src="./assests/js/main.js"></script>
+</body>
+
+</html>
