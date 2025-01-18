@@ -7,7 +7,7 @@
     <!--tailwindcss-->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- style.css -->
-  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -15,17 +15,32 @@
 </head>
 <body>
     <!-- navbar -->
-     <div class="p-4 flex justify-between items-center top-0 left-0 shadow-md">
-        <div class="flex gap-2 font-bold text-40px">
-            <a href="#" class="logo">Skywings</a>
+    <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md  ">
+        <!-- desktop view -->
+        <a href="#" id="brand" class="font-display flex gap-2 items-center flex-1">
+          <span class="text-2xl font-bold">Skywings</span>
+        </a>
+        <div id="nav-menu" class="hidden gap-4 lg:flex text-2xl
+             capitalize">
+          <a href="#" class=" hover:text-green-500">home</a>
+          <a href="#" class=" hover:text-green-500">about</a>
+          <a href="#" class=" hover:text-green-500">package</a>
+          <a href="#" class=" hover:text-green-500">contact</a>
+          <a href="#" class=" hover:text-green-500">tour</a>
         </div>
-        <div id="nav-bar" class="flex">
-            <a href="#" class="logo">home</a>
-            <a href="#" class="logo">about</a>
-            <a href="#" class="logo">package</a>
-            <a href="#" class="logo">contact</a>
+        <div class="hidden lg:flex flex-1 justify-end">
+          <button class="flex gap-2 items-center bg-black px-6 py-2 rounded-lg hover:border-blue-600">
+            <span class="text-2xl text-white font-400 uppercase">book trips</span> 
+          </button>
         </div>
-        <button class="bg-black text-white p-3 ">Book trips</button>
-     </div>
+        <div>
+          <button class="p-2 lg:hidden" onclick="handlemenu()">
+            <i class="fa-solid fa-bars text-gray-600 text-20px"></i>
+          </button>
+        </div>
+        <!-- for mobile view -->
+         
+    </nav>
+<script src="./js/script.js"></script>
 </body>
 </html>
