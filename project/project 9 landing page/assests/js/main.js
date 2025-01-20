@@ -1,5 +1,69 @@
 const navDialog = document.getElementById("nav-dialog");
-function handlemenu(){
-    navDialog.classList.toggle("hidden")
+function handlemenu() {
+  navDialog.classList.toggle("hidden");
 }
-document.getElementById("date").innerHTML=new Date().getFullYear();
+//date
+document.getElementById("date").innerHTML = new Date().getFullYear();
+
+//faq
+const dtElement = document.querySelectorAll("dt");
+dtElement.forEach((Element) => {
+  Element.addEventListener("click", function () {
+    const ddid = Element.getAttribute("aria-controls");
+    const ddElement = document.getElementById(ddid);
+    const ddArrowIcon = Element.querySelectorAll("i")[0];
+    ddArrowIcon.classList.toggle("-rotate-180");
+    ddElement.classList.toggle("hidden");
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+// sideing
+const initialTranslateLTR = -48 * 4;
+const initialTranslateRTL = 36 * 4;
+
+function setupIntersectionObserver(element, isLTR, speed) {
+  const intersectionCallback = (entries) => {
+    const isIntersecting = entries[0].isIntersecting;
+    if (isIntersecting) {
+      document.addEventListener("scroll", scrollHandler);
+    } else {
+      document.removeEventListener("scroll", scrollHandler);
+    }
+  };
+  const intersectionObserver = new IntersectionObserver(intersectionCallback);
+
+  intersectionObserver.observe(element);
+
+  function scrollHandler() {
+    const translateX =
+      (window.innerHeight - element.getBoundingClientRect().top) * speed;
+
+    let totalTranslate = 0;
+    if (isLTR) {
+      totalTranslate = translateX + initialTranslateLTR;
+    } else {
+      totalTranslate = -(translateX + initialTranslateRTL);
+    }
+
+    element.style.transform = `translateX(${totalTranslate}px)`;
+  }
+}
+
+const line1 = document.getElementById("line1");
+const line2 = document.getElementById("line2");
+const line3 = document.getElementById("line3");
+const line4 = document.getElementById("line4");
+
+setupIntersectionObserver(line1, true, 0.15);
+setupIntersectionObserver(line2, false, 0.15);
+setupIntersectionObserver(line3, true, 0.15);

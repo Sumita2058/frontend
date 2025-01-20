@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--tailwindcss-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--tailwindcss-->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- style.css -->
   <link rel="stylesheet" href="./css/style.css">
@@ -13,40 +14,98 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md  ">
-        <!-- desktop view -->
-        <a href="#" id="brand" class="font-display flex gap-2 items-center flex-1">
-          <span class="text-2xl font-bold">Skywings</span>
-        </a>
-        <div id="nav-menu" class="hidden gap-4 lg:flex text-2xl
+  <!-- navbar -->
+  <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md  ">
+    <!-- desktop view -->
+    <a href="#" id="brand" class=" flex gap-2 items-center flex-1">
+      <span class="text-2xl font-bold">Skywings</span>
+    </a>
+    <div id="nav-menu" class="hidden gap-4 lg:flex text-2xl
              capitalize">
-          <a href="#" class=" hover:text-green-500">home</a>
-          <a href="#" class=" hover:text-green-500">about</a>
-          <a href="#" class=" hover:text-green-500">package</a>
-          <a href="#" class=" hover:text-green-500">contact</a>
-          <a href="#" class=" hover:text-green-500">tour</a>
-        </div>
-        <div class="hidden lg:flex flex-1 justify-end">
-          <button class="flex gap-2 items-center bg-black px-6 py-2 rounded-lg hover:border-blue-600">
-            <span class="text-2xl text-white font-400 uppercase">book trips</span> 
-          </button>
-        </div>
-        <div>
-          <button class="p-2 lg:hidden" onclick="handlemenu()">
-            <i class="fa-solid fa-bars text-gray-600 text-20px"></i>
-          </button>
-        </div>
-        <!-- for mobile view -->
-         <div id="nav-dialog" class="hidden fixed z-20 md:hiddden bg-blue-200">
-          <div class="flex justify-between">
-            <a href="#" class="font-medium text-lg">
-              <span class="font medium text-lg">Skywings</span></a>
-              <button class="p-2 md:hidden" onclick="handlemenu()"><i class="fa-solid fa-xmark text-gray-500"></i></button>
-          </div>
-         </div>
-    </nav>
-<script src="./js/script.js"></script>
+      <a href="#" class=" hover:text-green-500">home</a>
+      <a href="#" class=" hover:text-green-500">about</a>
+      <a href="#" class=" hover:text-green-500">package</a>
+      <a href="#" class=" hover:text-green-500">contact</a>
+      <a href="#" class=" hover:text-green-500">tour</a>
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end">
+      <button class="flex gap-2 items-center bg-black px-6 py-2 rounded-lg hover:border-blue-600">
+        <span class="text-2xl text-white font-400 uppercase">book trips</span>
+      </button>
+    </div>
+    <div>
+      <button class="p-2 lg:hidden" onclick="handlemenu()">
+        <i class="fa-solid fa-bars text-gray-600 text-20px"></i>
+      </button>
+    </div>
+    <!-- for mobile view -->
+    <div id="nav-dialog" class="hidden fixed md:hidden bg-blue-500 p-3 inset-0">
+      <div class="flex justify-between">
+        <a href="#" class="flex gap-2 items-center">
+
+          <span class="bg-blue-400 font medium text-2xl">Skywings</span></a>
+        <button class="p-2 md:hidden" onclick="handlemenu()"><i class="fa-solid fa-xmark text-gray-500"></i></button>
+      </div>
+      <div class="mt-10 p-10">
+
+        <a href="#" class="font-medium p-20 block rounded-lg hover:underline ">home</a>
+
+        <a href="#" class="font-medium  ml-60 m-3 p-3   block rounded-lg hover:underline
+        ">about</a>
+
+        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
+        ">tour</a>
+
+        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
+        ">package</a>
+
+
+        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
+        ">book trips</a>
+      </div>
+
+  </nav>
+  <!-- footer -->
+  
+  <footer class="mx-auto max-w-auto "> 
+    <div class="flex flex-row gap-4 mt-20 rounded-5xl text-sm justify-between bg-gray-300  ">
+      <div class="px-2 py-12 m-3 gap-4 justify-between text-sm">
+        <a href="#" class="font-bold text-2xl text-black-400">Skywings</a>
+        <p class="p-4 flex flex-wrap font-light font-weight mt-6 ">Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here,
+          where seamless planning meets unforgettable experiences.
+        </p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+     
+      <div class="">
+        <h1>quick line</h1>
+        <ul>
+          <li>home</li>
+          <li>flight</li>
+          <li> hotel</li>
+          <li>cruise</li>
+        </ul>
+      </div>
+      <div class="">
+        <h1>contact us</h1>
+    <p><i class="fa-solid fa-phone"></i><span>+9779815019001</span></p>
+    <p><i class="fa-regular fa-envelope"></i><span>info@Skywings</span></p>
+    <p><i class="fa-solid fa-location-dot"></i><span>kathmandu, Nepal</span></p>
+      </div>
+      <form>
+        <h1>subscribe</h1><br>
+        <input type="text" placeholder="Enter your email">
+
+      <button class="bg-blue-500 px-12 py-2">subscribe</button>
+      </form>
+        
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
