@@ -17,92 +17,114 @@
 
 <body>
   <!-- navbar -->
-  <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md  ">
+  <nav class="p-3 flex  bg-white relative justify-between items-center fixed top-0 left-0  right-0 z-50 shadow-md  ">
     <!-- desktop view -->
     <a href="#" id="brand" class=" flex gap-2 items-center flex-1">
       <span class="text-2xl font-bold">Skywings</span>
     </a>
     <div id="nav-menu" class="hidden gap-4 lg:flex text-2xl
              capitalize">
-      <a href="#" class=" hover:text-green-500">home</a>
-      <a href="#" class=" hover:text-green-500">about</a>
-      <a href="#" class=" hover:text-green-500">package</a>
-      <a href="#" class=" hover:text-green-500">contact</a>
-      <a href="#" class=" hover:text-green-500">tour</a>
+      <a href="#" class=" hover:text-white-500">home</a>
+      <a href="#" class=" hover:text-white-500">about</a>
+      <a href="#" class=" hover:text-white-500">package</a>
+      <a href="#" class=" hover:text-white-500">contact</a>
+      <a href="#" class=" hover:text-white-500">tour</a>
     </div>
     <div class="hidden lg:flex flex-1 justify-end">
-      <button class="flex gap-2 items-center bg-black px-6 py-2 rounded-lg hover:border-blue-600">
-        <span class="text-2xl text-white font-400 uppercase">book trips</span>
+      <button class="flex gap-2 items-center bg-black px-6 py-2 rounded-lg ">
+        <span class="text-2xl text-white font-400 uppercase hover:blue-600">book trips</span>
       </button>
     </div>
     <div>
       <button class="p-2 lg:hidden" onclick="handlemenu()">
-        <i class="fa-solid fa-bars text-gray-600 text-20px"></i>
+        <i class="fa-solid fa-bars text-black-600 text-20px"></i>
       </button>
     </div>
     <!-- for mobile view -->
-    <div id="nav-dialog" class="hidden fixed md:hidden bg-blue-500 p-3 inset-0">
-      <div class="flex justify-between">
+    <div id="nav-dialog" class="hidden flex flex-col absolute fixed max-w-100 z-10 md:hidden bg-blue-500 p-3 inset-3">
+      <div class="flex justify-between bg-blue-400">
         <a href="#" class="flex gap-2 items-center">
-
-          <span class="bg-blue-400 font medium text-2xl">Skywings</span></a>
+          <span class="font medium text-lg">Skywings</span></a>
         <button class="p-2 md:hidden" onclick="handlemenu()"><i class="fa-solid fa-xmark text-gray-500"></i></button>
       </div>
-      <div class="mt-10 p-10">
-
-        <a href="#" class="font-medium p-20 block rounded-lg hover:underline ">home</a>
-
-        <a href="#" class="font-medium  ml-60 m-3 p-3   block rounded-lg hover:underline
-        ">about</a>
-
-        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
-        ">tour</a>
-
-        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
-        ">package</a>
-
-
-        <a href="#" class="font-medium ml-60 m-3 p-3  block rounded-lg hover:underline
-        ">book trips</a>
+      <div class="mt-10 bg-blue-400 ">
+        <a href="#"
+          class="font-medium m-3 p-3 hover:border-white-500 block rounded-lg  hover:bg-gray-100">home</a>
+        <a href="#"
+          class="font-medium m-3 p-3 hover:border-gray-500 block rounded-lg  hover:bg-gray-100">about</a>
+        <a href="#"
+          class="font-medium m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">contact</a>
+        <a href="#"
+          class="font-medium m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">tour</a>
+        <a href="#"
+          class="font-medium m-3 p-3 hover:border-gray-500 block rounded-lg hover:bg-gray-100">package</a>
       </div>
+    </div>
 
   </nav>
+
+
+
+
+
+
+
+  <!-- main -->
+   <div class="mt-16">
+    <div class="relative rounded-4xl bg-white-500 p-10 shadow-2xl">
+      <img src="./image/header.png" alt="img" class="max-w-100 max-h-100 h">
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- footer -->
-  
-  <footer class="mx-auto max-w-auto "> 
-    <div class="flex flex-row gap-4 mt-20 rounded-5xl text-sm justify-between bg-gray-300  ">
+
+  <footer class="mx-auto max-w-auto px-12 py-12">
+    <div class="grid grid-cols-4 mt-20 rounded-5xl text-sm justify-between bg-gray-300  ">
       <div class="px-2 py-12 m-3 gap-4 justify-between text-sm">
         <a href="#" class="font-bold text-2xl text-black-400">Skywings</a>
-        <p class="p-4 flex flex-wrap font-light font-weight mt-6 ">Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here,
+        <p class="flex flex-wrap font-weight ">Explore the world with ease and excitement through our
+          comprehensive travel platform. Your journey begins here,
           where seamless planning meets unforgettable experiences.
         </p>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-youtube"></i>
       </div>
-     
-      <div class="">
-        <h1>quick line</h1>
-        <ul>
+
+      <div class="px-2 py-12 m-3 gap-4 justify-between text-sm">
+        <h1 class="font-bold text-2xl text-black-400">quick line</h1>
+        <ul class="font-light font-weight">
           <li>home</li>
           <li>flight</li>
           <li> hotel</li>
           <li>cruise</li>
         </ul>
       </div>
-      <div class="">
-        <h1>contact us</h1>
-    <p><i class="fa-solid fa-phone"></i><span>+9779815019001</span></p>
-    <p><i class="fa-regular fa-envelope"></i><span>info@Skywings</span></p>
-    <p><i class="fa-solid fa-location-dot"></i><span>kathmandu, Nepal</span></p>
+      <div class="px-2 py-12 m-3 gap-4 justify-between text-sm">
+        <h1 class="text-2xl text-black-400 font-bold">contact us</h1>
+        <p><i class="fa-solid fa-phone"></i><span>+9779815019001</span></p>
+        <p><i class="fa-regular fa-envelope"></i><span>info@Skywings</span></p>
+        <p><i class="fa-solid fa-location-dot"></i><span>kathmandu, Nepal</span></p>
       </div>
-      <form>
-        <h1>subscribe</h1><br>
-        <input type="text" placeholder="Enter your email">
-
-      <button class="bg-blue-500 px-12 py-2">subscribe</button>
+      <form class="px-2 py-12 m-3 gap-4 justify-between text-sm">
+        <h1 class="font-bold text-2xl text-black-400">subscribe</h1>
+        <input type="text" placeholder="Enter your email"><br>
+        <button class="bg-blue-500 px-12 py-2">subscribe</button>
       </form>
-        
+
     </div>
   </footer>
   <script src="./js/script.js"></script>
